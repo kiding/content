@@ -88,7 +88,12 @@ tags:
  <dt>{{htmlattrdef("name")}}</dt>
  <dd>The name of the form. Deprecated as of HTML 4 (use <code>id</code> instead). It must be unique among the forms in a document and not an empty string as of HTML5.</dd>
  <dt>{{htmlattrdef("rel")}}</dt>
- <dd>Creates a hyperlink or annotation depending on the value, see the <a href="/en-US/docs/Web/HTML/Attributes/rel">{{htmlattrdef("rel")}}</a> attribute for details.</dd>
+ <dd>Creates a hyperlink or annotation depending on the value, see the <a href="/en-US/docs/Web/HTML/Attributes/rel">{{htmlattrdef("rel")}}</a> attribute for details.
+ <div class="notecard note">
+ <h4>Note</h4>
+ <p>No browser has implemented this attribute yet since <a href="https://github.com/whatwg/html/pull/4332">its standardization.</a></p>
+ </div>
+ </dd>
 </dl>
 
 <h3 id="Attributes_for_form_submission">Attributes for form submission</h3>
@@ -132,7 +137,7 @@ tags:
  <p>This value can be overridden by a {{htmlattrxref("formtarget", "button")}} attribute on a {{HTMLElement("button")}}, <code><a href="/en-US/docs/Web/HTML/Element/input/submit">&lt;input type="submit"&gt;</a></code>, or <code><a href="/en-US/docs/Web/HTML/Element/input/image">&lt;input type="image"&gt;</a></code> element.</p>
  <div class="notecard note">
  <h4>Note</h4> 
- <p>Setting <code>target="_blank"</code> on <code>&lt;form&gt;</code> elements implicitly provides the same <code>rel</code> behavior as setting <code><a href="/en-US/docs/Web/HTML/Link_types/noopener">rel="noopener"</a></code> which does not set <code>window.opener</code>.</p>
+ <p>Setting <code>target="_blank"</code> on <code>&lt;form&gt;</code> elements implicitly provides the same <code>rel</code> behavior as setting <code><a href="/en-US/docs/Web/HTML/Link_types/noopener">rel="noopener"</a></code> which does not set <code>window.opener</code>. See <code><a href="#attr-rel">rel</a></code> for support status.</p>
  </div>
  </dd>
 </dl>
